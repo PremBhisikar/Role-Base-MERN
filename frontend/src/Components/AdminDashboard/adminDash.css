@@ -1,0 +1,134 @@
+
+
+  /* The side navigation menu */
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    background-color: #4f63b6;
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
+    
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: #fff;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #4f63b6;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color:white;
+    color: #4f63b6;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 80vh;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  
+
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  /* body{
+    background-color: #000000;
+  } */
+   /* {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
+  } */
+  .table-container {
+    text-align: center;
+    max-width: 1200px; /* Adjust the max-width to your preference */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 15px; /* Add some spacing to the sides if needed */
+    margin-top: 20px; /* Add margin to separate the containers */
+  }
+  
+  
+  .container span{
+    text-transform: uppercase;
+    display: block;
+  }
+  .mytext1{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: #002f5f;
+    position: relative;
+    animation: text 3s 1;
+  
+  }
+  .mytext2{
+    font-size: 30px;
+      color: #E91E63;
+      font-weight: bold;
+      font-family: cursive;
+  }
+  @keyframes text {
+    0%{
+      color: black;
+      margin-bottom: -40px;
+  
+    }
+    30%{
+      letter-spacing: 25px;
+      margin-bottom: -40px;
+  
+    }
+    85%{
+      letter-spacing: 8px;
+      margin-bottom: -40px;
+  
+    }
+  }
+  /* sidebar css */
+
+  .p-container {
+    width: 90%;
+}
+.left-sidebar {
+  width: 10%;
+}
+  
+  
+  
